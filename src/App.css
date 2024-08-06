@@ -9,18 +9,13 @@ body {
   background-color: #fdfdfd;
 }
 
-.App-header {
+header {
   background-color: #0360ff;
   color: white;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .profile-icon {
@@ -162,6 +157,7 @@ body {
   box-sizing: border-box;
   border-top: 1px solid #ccc;
   display: flex;
+  margin-left:200px;
 }
 
 .chat-input-box input[type="text"] {
@@ -170,7 +166,8 @@ body {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: 0px;
+  margin-left:0px;
 }
 
 .chat-input-box button {
