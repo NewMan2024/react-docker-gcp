@@ -9,13 +9,18 @@ body {
   background-color: #fdfdfd;
 }
 
-header {
+.App-header {
   background-color: #0360ff;
   color: white;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
 .profile-icon {
