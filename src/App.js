@@ -300,52 +300,7 @@ function App() {
           </li>
         </ul>
       </div>
-      <div className="container-wrapper">
-        <div className={`container-button ${activeContainer === 'search' ? 'active' : ''}`} onClick={() => showContainer('search')}>
-          Search
-        </div>
-        <div className={`container-button ${activeContainer === 'chat' ? 'active' : ''}`} onClick={() => showContainer('chat')}>
-          Chat
-        </div>
-        <div className={`container-button ${activeContainer === 'marketplace' ? 'active' : ''}`} onClick={() => showContainer('marketplace')}>
-          Marketplace
-        </div>
-        <div className={`container-button ${activeContainer === 'jobs-search' ? 'active' : ''}`} onClick={() => showContainer('jobs-search')}>
-          Jobs Search
-        </div>
-      </div>
-      <div className="container-content">
-        {activeContainer === 'search' && (
-          <div id="search-container" className="search-container active">
-            <form id="search-form" onSubmit={(e) => handleFormSubmit(e, 'Search')}>
-              <input type="search" id="search-query" name="searchQuery" placeholder="Search..." />
-              <button type="submit">Search</button>
-            </form>
-          </div>
-        )}
-        {activeContainer === 'chat' && (
-          <div id="chat-container" className="chat-container active">
-            <form id="chat-form" onSubmit={handleChatSubmit}>
-              <input type="text" id="chat-input" name="message" placeholder="Ask your question" />
-              <button type="submit">Send</button>
-            </form>
-            <div id="chat-window"></div>
-          </div>
-        )}
-        {activeContainer === 'marketplace' && (
-          <div id="marketplace-container" className="marketplace-container active">
-            <form id="marketplace-form" onSubmit={(e) => handleFormSubmit(e, 'Marketplace')}>
-              <input type="search" id="marketplace-query" name="marketplaceQuery" placeholder="Search marketplace..." />
-              <button type="submit">Search</button>
-            </form>
-          </div>
-        )}
-        {activeContainer === 'jobs-search' && (
-          <div id="jobs-search-container" className="jobs-search-container active">
-            <form id="jobs-search-form" onSubmit={(e) => handleFormSubmit(e, 'Jobs')}>
-              <input type="search" id="jobs-search-query" name="jobsSearchQuery" placeholder="Search jobs..." />
-              <button type="submit">Search</button>
-            </form>
+  
             <div>
               <button className="jobs-search-option" data-category="Healthcare">Healthcare</button>
               <button className="jobs-search-option" data-category="Education">Education</button>
