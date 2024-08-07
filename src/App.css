@@ -111,23 +111,6 @@ header {
   overflow-y: auto;
 }
 
-.search-container, .chat-container, .marketplace-container, .jobs-search-container {
-  display: none;
-}
-
-.search-container.active, .chat-container.active, .marketplace-container.active, .jobs-search-container.active {
-  display: block;
-}
-
-.search-container input[type="search"], .chat-container input[type="text"], .marketplace-container input[type="search"], .jobs-search-container input[type="search"] {
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
 
 .left-nav h2, .right-nav h2 {
   margin-top: 0;
